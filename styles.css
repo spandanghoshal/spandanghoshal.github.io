@@ -48,6 +48,10 @@ body {
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   }
+
+  section + section {
+    margin-top: 2.5rem;
+  }
   
   h2 {
     border-bottom: 1px solid #dabfa7;
@@ -84,5 +88,234 @@ body {
     font-size: 0.9rem;
     color: #5b4737;
     margin-top: 2rem;
+  }
+
+  /* Blog preview cards on homepage */
+  .blog-preview-intro {
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-cards {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .blog-cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .blog-card {
+    background-color: #fffaf2;
+    border: 1px solid #f0dfc8;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .blog-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .blog-card a {
+    color: #6b3f2d;
+    text-decoration: none;
+  }
+
+  .blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  }
+
+  .post-meta {
+    font-size: 0.9rem;
+    color: #8a6f5a;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  .blog-cta {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    background-color: #c18b56;
+    color: #fffdf5;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+  }
+
+  .button:hover {
+    background-color: #a76f3e;
+  }
+
+  .academic-section {
+    position: relative;
+  }
+
+  .section-intro {
+    margin-bottom: 1.5rem;
+  }
+
+  .focus-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 820px) {
+    .focus-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .focus-card {
+    background-color: #fffaf2;
+    border: 1px solid #f0dfc8;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  }
+
+  .focus-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .key-topics {
+    margin: 1rem 0 0;
+    padding-left: 1.2rem;
+    color: #5f4736;
+    font-size: 0.95rem;
+  }
+
+  .paper-list {
+    counter-reset: paper;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .paper-list li {
+    position: relative;
+    padding-left: 2.8rem;
+  }
+
+  .paper-list li::before {
+    counter-increment: paper;
+    content: counter(paper) ".";
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    font-weight: 700;
+    color: #b0733b;
+  }
+
+  .paper-list strong {
+    color: #402b20;
+  }
+
+  .venue {
+    display: block;
+    font-style: italic;
+    color: #7a5a45;
+    margin-top: 0.25rem;
+  }
+
+  .paper-notes {
+    display: block;
+    margin-top: 0.35rem;
+    color: #5f4736;
+  }
+
+  .section-cta {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .teaching-cards {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .teaching-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .teaching-card {
+    background-color: #fffaf2;
+    border: 1px solid #f0dfc8;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  }
+
+  .teaching-card h3 {
+    margin-top: 0;
+  }
+
+  .teaching-meta {
+    font-size: 0.95rem;
+    color: #7a5a45;
+    margin-bottom: 0.75rem;
+  }
+
+  .teaching-card ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: #5f4736;
+  }
+
+  .service-list {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: #5f4736;
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  /* Blog page layout */
+  .blog-hero {
+    margin-bottom: 2.5rem;
+  }
+
+  .blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .blog-post {
+    background: #fff;
+    padding: 1.75rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    border: 1px solid #f0dfc8;
+  }
+
+  .blog-post h3 {
+    margin-top: 0;
+    color: #3d2c23;
+  }
+
+  @media (max-width: 600px) {
+    .focus-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .teaching-cards {
+      grid-template-columns: 1fr;
+    }
   }
   
