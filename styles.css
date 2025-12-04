@@ -319,3 +319,50 @@ body {
     }
   }
   
+
+  /* Music page */
+  .music-hero {
+    background: linear-gradient(135deg, #fff7ea, #f5e6d1);
+  }
+
+  .music-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .music-card {
+    background-color: #fffaf2;
+    border: 1px solid #f0dfc8;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  }
+
+  .music-listen {
+    margin-top: 2.5rem;
+  }
+
+  .music-links {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .music-link-card {
+    background-color: #fffaf2;
+    border: 1px solid #f0dfc8;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  }
+
+  .music-link-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .music-link-card p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
