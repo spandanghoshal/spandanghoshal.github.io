@@ -32,6 +32,47 @@
     </section>
 
     <section class="blog-list">
+      <article class="blog-post" id="post-ramanujan-series">
+        <h3>A Surprising Path to π: Ramanujan's Fast-Converging Series</h3>
+        <p class="post-meta">March 12, 2026 · Mathematics</p>
+        <p>
+          One of my favorite mathematical surprises is that the number π, which begins life as a geometric ratio,
+          can be computed through an incredibly fast infinite series discovered by Srinivasa Ramanujan:
+        </p>
+        <p>
+          <strong>
+            1/π = (2√2 / 9801) Σ<sub>k=0</sub><sup>∞</sup>
+            (4k)! (1103 + 26390k) / ((k!)<sup>4</sup> 396<sup>4k</sup>)
+          </strong>
+        </p>
+        <p>
+          What makes this formula remarkable is its speed. The denominator contains 396<sup>4k</sup>, so each new
+          term becomes tiny extremely quickly. In practical terms, each added term contributes roughly 8 extra correct
+          decimal digits of π. That is dramatically faster than many classical series expansions.
+        </p>
+        <p>
+          To see the effect, take only the first term (k = 0). Then the sum is just 1103, giving
+        </p>
+        <p>
+          <strong>1/π ≈ (2√2 / 9801) · 1103</strong>
+          and therefore <strong>π ≈ 3.141592730...</strong>
+        </p>
+        <p>
+          This is already accurate to 6 decimal places after using only one term. Including k = 1 jumps accuracy to
+          about 14 decimal places. The formula feels almost magical until we remember a deep theme in modern math:
+          geometry, complex analysis, and number theory constantly talk to each other in hidden ways.
+        </p>
+        <p>
+          Ramanujan derived this family of identities through modular equations and elliptic function theory. So while
+          the final expression looks like a pure arithmetic gadget, its roots are geometric and analytic. That unity is
+          what I love most: π from circles, computed by factorials, explained by complex structure.
+        </p>
+        <p>
+          A good exercise is to code this series and watch convergence numerically. It is a humbling reminder that
+          beautiful theory can also be computationally powerful.
+        </p>
+      </article>
+
       <article class="blog-post" id="post-spirituality-ai">
         <h3>Spirituality in the Age of AI</h3>
         <p class="post-meta">November 14, 2025 · Reflections</p>
