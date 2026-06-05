@@ -332,6 +332,13 @@ section + section {
   margin-top: 0.2rem;
 }
 
+.authors {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--clr-text-light);
+  margin-top: 0.2rem;
+}
+
 .paper-notes {
   display: block;
   margin-top: 0.3rem;
