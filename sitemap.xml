@@ -26,6 +26,16 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://spandanghoshal.github.io/blog/vegetarianism-as-an-optimization-problem.html</loc>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://spandanghoshal.github.io/blog/spirituality-in-the-age-of-ai.html</loc>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
     <loc>https://spandanghoshal.github.io/gallery.html</loc>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>

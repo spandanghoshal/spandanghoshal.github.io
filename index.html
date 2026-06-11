@@ -4,17 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Spandan Ghoshal — Statistician &amp; Researcher</title>
-  <meta name="description" content="Personal academic website of Spandan Ghoshal, PhD candidate in Statistics at the Indian Statistical Institute, Kolkata. Research in high-dimensional inference, change-point detection, and nonparametric statistics." />
-  <meta name="keywords" content="Spandan Ghoshal, statistician, ISI Kolkata, Indian Statistical Institute, change-point detection, high-dimensional inference, nonparametric statistics, PhD" />
+  <meta name="description" content="Personal academic website of Spandan Ghoshal, PhD candidate in Statistics at the Indian Statistical Institute, Kolkata. Research in nonparametric methods, change-point detection, high-dimensional statistics, and random graph models." />
+  <meta name="keywords" content="Spandan Ghoshal, statistician, ISI Kolkata, Indian Statistical Institute, change-point detection, high-dimensional statistics, nonparametric statistics, random graphs, PhD" />
   <meta name="author" content="Spandan Ghoshal" />
   <link rel="canonical" href="https://spandanghoshal.github.io/" />
   <meta property="og:title" content="Spandan Ghoshal — Statistician &amp; Researcher" />
-  <meta property="og:description" content="PhD candidate in Statistics at the Indian Statistical Institute, Kolkata. Research in high-dimensional inference and change-point detection." />
+  <meta property="og:description" content="PhD candidate in Statistics at the Indian Statistical Institute, Kolkata. Research in nonparametric methods, change-point detection, and high-dimensional statistics." />
   <meta property="og:url" content="https://spandanghoshal.github.io/" />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Inter:wght@400..700&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script type="application/ld+json">
   {
@@ -23,153 +23,266 @@
     "name": "Spandan Ghoshal",
     "url": "https://spandanghoshal.github.io/",
     "jobTitle": "PhD Candidate in Statistics",
-    "affiliation": {
-      "@type": "Organization",
-      "name": "Indian Statistical Institute, Kolkata"
-    },
-    "email": "spandan.ghoshal_r@isical.ac.in",
-    "sameAs": [
-      "https://arxiv.org/search/?searchtype=author&query=Ghoshal%2C+Spandan"
-    ],
-    "knowsAbout": ["Statistics", "Change-Point Detection", "High-Dimensional Inference", "Nonparametric Statistics"]
+    "affiliation": { "@type": "Organization", "name": "Indian Statistical Institute, Kolkata" },
+    "email": "ghoshalspandan@gmail.com",
+    "sameAs": ["https://arxiv.org/search/?searchtype=author&query=Ghoshal%2C+Spandan"],
+    "knowsAbout": ["Statistics", "Change-Point Detection", "High-Dimensional Statistics", "Nonparametric Statistics", "Random Graph Models"]
   }
   </script>
 </head>
 <body>
-  <header class="header">
-    <h1>Spandan Ghoshal</h1>
-    <p class="tagline">PhD Candidate in Statistics · Indian Statistical Institute, Kolkata</p>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="brand" href="index.html">Spandan <span class="brand-mark">Ghoshal</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M1 1h18M1 7h18M1 13h18"/>
+        </svg>
+      </button>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="music.html">Music</a>
+        <a class="nav-cv" href="CV_June26.pdf" target="_blank">CV</a>
+      </nav>
+    </div>
   </header>
 
-  <nav class="navbar">
-    <a href="index.html" aria-current="page">Home</a>
-    <a href="research.html">Research</a>
-    <a href="projects.html">Projects</a>
-    <a href="notes.html">Notes</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="blog.html">Blog</a>
-    <a href="music.html">Music</a>
-    <a href="CV_June26.pdf" target="_blank">CV</a>
-  </nav>
-
   <main>
-    <section id="about">
-      <h2>About</h2>
-      <div class="profile-container">
-        <div class="text-block">
-          <p>
-            I am <strong>Spandan Ghoshal</strong>, a doctoral researcher in Statistics at the
-            <strong>Indian Statistical Institute, Kolkata</strong>. My work centres on high-dimensional inference,
-            nonparametric change-point detection, and the theoretical underpinnings of statistical learning.
-          </p>
-          <p>
-            Prior to the PhD, I completed my <strong>M.Stat</strong> (specialising in Computational Statistics) at
-            ISI Kolkata, and earned a <strong>B.Sc. (Hons)</strong> in Statistics from Presidency University, Kolkata.
-          </p>
-          <p>
-            Beyond the classroom, I practise Indian classical flute and harmonica, and draw quiet inspiration from
-            Vedic philosophical traditions that inform both my outlook on research and daily life.
-          </p>
-          <a class="button" href="CV_June26.pdf" target="_blank">Download CV &darr;</a>
+
+    <!-- ============ Hero ============ -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="reveal is-visible">
+            <p class="hero-kicker">Indian Statistical Institute · Kolkata</p>
+            <h1>Reading the signal<br /><em>beneath the noise.</em></h1>
+            <p class="hero-sub">
+              I am Spandan Ghoshal, a doctoral researcher in Statistics. I develop nonparametric
+              and distribution&#8209;free methods for change&#8209;point detection, high&#8209;dimensional
+              inference, and random graph models.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-solid" href="research.html">Explore my research <span>&rarr;</span></a>
+              <a class="btn btn-ghost" href="CV_June26.pdf" target="_blank">Curriculum vitae</a>
+            </div>
+          </div>
+          <figure class="portrait-frame reveal reveal-d1 is-visible">
+            <img src="images/profile.jpg" alt="Portrait of Spandan Ghoshal" />
+            <figcaption class="portrait-caption">M.Stat Convocation · Dec 2024</figcaption>
+          </figure>
         </div>
-        <div class="photo-block">
-          <img src="images/profile.jpg" alt="Portrait of Spandan Ghoshal" />
+
+        <!-- Animated change-point figure: three series, mean & variance changes -->
+        <figure class="fig-frame" aria-hidden="true">
+          <svg viewBox="0 0 720 268" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two noisy data streams exhibiting change-points: a mean shift and a variance change, each at a different time">
+
+            <!-- Panel 1: mean shift -->
+            <line class="cp-axis" x1="40" y1="122" x2="690" y2="122" />
+            <line class="cp-axis" x1="40" y1="28" x2="40" y2="122" />
+            <text class="cp-tag" x="46" y="38">SERIES 1 &middot; MEAN SHIFT</text>
+            <line class="cp-mean" x1="40" y1="90" x2="394" y2="90" />
+            <line class="cp-mean" x1="394" y1="55" x2="690" y2="55" />
+            <line class="cp-tau" x1="394" y1="30" x2="394" y2="122" />
+            <g class="cp-labelgroup">
+              <text class="cp-label" x="402" y="48">&#964;<tspan dy="4" font-size="11">1</tspan></text>
+              <path class="cp-hat" d="M 403 34 l 4.5 -5 l 4.5 5" />
+            </g>
+            <path class="cp-path cp-p1" d="M 40.0 88.5 L 46.5 93.1 L 53.0 88.6 L 59.5 88.1 L 66.0 84.4 L 72.5 88.7 L 79.0 96.7 L 85.5 92.5 L 92.0 96.2 L 98.5 91.5 L 105.0 92.4 L 111.5 91.1 L 118.0 80.0 L 124.5 95.1 L 131.0 93.0 L 137.5 93.0 L 144.0 79.9 L 150.5 79.5 L 157.0 84.7 L 163.5 87.2 L 170.0 91.8 L 176.5 89.7 L 183.0 93.1 L 189.5 86.1 L 196.0 91.9 L 202.5 92.4 L 209.0 86.0 L 215.5 100.3 L 222.0 93.3 L 228.5 97.2 L 235.0 86.3 L 241.5 85.6 L 248.0 87.9 L 254.5 89.4 L 261.0 93.8 L 267.5 91.5 L 274.0 87.3 L 280.5 84.3 L 287.0 86.9 L 293.5 97.3 L 300.0 85.2 L 306.5 91.5 L 313.0 92.6 L 319.5 81.1 L 326.0 90.3 L 332.5 97.8 L 339.0 77.9 L 345.5 88.1 L 352.0 89.4 L 358.5 85.1 L 365.0 93.0 L 371.5 89.6 L 378.0 81.2 L 384.5 95.0 L 391.0 94.0 L 397.5 60.7 L 404.0 63.6 L 410.5 57.2 L 417.0 55.7 L 423.5 47.2 L 430.0 58.7 L 436.5 51.3 L 443.0 52.3 L 449.5 47.4 L 456.0 49.2 L 462.5 51.8 L 469.0 62.7 L 475.5 42.8 L 482.0 46.3 L 488.5 56.4 L 495.0 63.7 L 501.5 58.5 L 508.0 43.6 L 514.5 39.9 L 521.0 57.1 L 527.5 50.6 L 534.0 48.3 L 540.5 60.9 L 547.0 61.6 L 553.5 55.9 L 560.0 56.5 L 566.5 57.6 L 573.0 64.6 L 579.5 58.7 L 586.0 58.1 L 592.5 58.3 L 599.0 45.6 L 605.5 62.7 L 612.0 60.7 L 618.5 58.2 L 625.0 43.2 L 631.5 51.2 L 638.0 60.1 L 644.5 44.1 L 651.0 53.9 L 657.5 61.1 L 664.0 47.1 L 670.5 64.7 L 677.0 58.3 L 683.5 54.1 L 690.0 56.9" />
+
+            <!-- Panel 2: variance change (mean constant, spread widens) -->
+            <line class="cp-axis" x1="40" y1="248" x2="690" y2="248" />
+            <line class="cp-axis" x1="40" y1="153" x2="40" y2="248" />
+            <text class="cp-tag" x="46" y="163">SERIES 2 &middot; VARIANCE CHANGE</text>
+            <line class="cp-band" x1="40" y1="187" x2="264" y2="187" />
+            <line class="cp-band" x1="40" y1="203" x2="264" y2="203" />
+            <line class="cp-band" x1="264" y1="169" x2="690" y2="169" />
+            <line class="cp-band" x1="264" y1="221" x2="690" y2="221" />
+            <line class="cp-tau" x1="264" y1="155" x2="264" y2="248" />
+            <g class="cp-labelgroup">
+              <text class="cp-label" x="272" y="178">&#964;<tspan dy="4" font-size="11">2</tspan></text>
+              <path class="cp-hat" d="M 273 164 l 4.5 -5 l 4.5 5" />
+            </g>
+            <path class="cp-path cp-p2" d="M 40.0 190.1 L 46.5 196.5 L 53.0 199.0 L 59.5 192.9 L 66.0 189.7 L 72.5 194.7 L 79.0 196.9 L 85.5 199.4 L 92.0 190.1 L 98.5 189.8 L 105.0 197.8 L 111.5 196.9 L 118.0 201.1 L 124.5 198.9 L 131.0 194.6 L 137.5 193.9 L 144.0 205.3 L 150.5 193.8 L 157.0 191.9 L 163.5 190.4 L 170.0 195.4 L 176.5 195.6 L 183.0 193.6 L 189.5 194.8 L 196.0 196.1 L 202.5 197.8 L 209.0 199.4 L 215.5 195.8 L 222.0 187.8 L 228.5 197.8 L 235.0 189.3 L 241.5 194.3 L 248.0 189.1 L 254.5 195.0 L 261.0 191.9 L 267.5 197.8 L 274.0 237 L 280.5 194.4 L 287.0 206.0 L 293.5 177.8 L 300.0 191.3 L 306.5 203.6 L 313.0 193.8 L 319.5 199.8 L 326.0 196.3 L 332.5 181.9 L 339.0 202.3 L 345.5 184.4 L 352.0 219.3 L 358.5 188.4 L 365.0 203.9 L 371.5 195.0 L 378.0 207.4 L 384.5 187.2 L 391.0 208.0 L 397.5 193.4 L 404.0 211.4 L 410.5 203.1 L 417.0 196.8 L 423.5 184.9 L 430.0 205.0 L 436.5 201.1 L 443.0 216.3 L 449.5 190.1 L 456.0 202.2 L 462.5 201.6 L 469.0 198.7 L 475.5 197.7 L 482.0 197.4 L 488.5 187.2 L 495.0 181.8 L 501.5 189.8 L 508.0 202.7 L 514.5 214.6 L 521.0 207.7 L 527.5 208.7 L 534.0 205.1 L 540.5 204.1 L 547.0 197.4 L 553.5 205.0 L 560.0 218.1 L 566.5 190.7 L 573.0 186.0 L 579.5 220.5 L 586.0 198.2 L 592.5 207.6 L 599.0 206.4 L 605.5 180.2 L 612.0 226.6 L 618.5 218.1 L 625.0 197.3 L 631.5 204.8 L 638.0 196.6 L 644.5 183.5 L 651.0 193.5 L 657.5 199.9 L 664.0 209.5 L 670.5 204.2 L 677.0 195.8 L 683.5 212.6 L 690.0 185.1" />
+          </svg>
+          <figcaption class="fig-caption"><strong>Fig. 1</strong> — Two data streams with change-points at different epochs: a mean shift at &#964;&#770;<sub>1</sub> and a variance change at &#964;&#770;<sub>2</sub> &mdash; the kinds of structure my research aims to detect.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="eyebrow reveal">About</p>
+        <h2 class="section-title reveal">A brief introduction</h2>
+        <div class="prose reveal reveal-d1">
+          <p class="dropcap">
+            I am a doctoral researcher in Statistics at the <strong>Indian Statistical Institute, Kolkata</strong>,
+            working on nonparametric and distribution&#8209;free inference. Before the PhD, I completed my
+            <strong>M.Stat</strong> (Computational Statistics) at ISI Kolkata and a <strong>B.Sc. (Hons)</strong>
+            in Statistics from Presidency University, Kolkata.
+          </p>
+          <p>
+            Beyond research, I practise Indian classical <a href="music.html">flute and harmonica</a>, and draw
+            quiet inspiration from Vedic philosophical traditions that shape both my outlook on research and
+            daily life. I write about these intersections on my <a href="blog.html">blog</a>.
+          </p>
         </div>
       </div>
     </section>
 
-    <section id="research-focus" class="academic-section">
-      <h2>Research Interests</h2>
-      <p class="section-intro">
-        My research lies at the interface of high-dimensional theory and data-driven methodology. I strive for a
-        balance of rigorous mathematical analysis and practical relevance.
-      </p>
+    <!-- ============ Research interests ============ -->
+    <section class="section" id="research-focus">
+      <div class="container">
+        <p class="eyebrow reveal">Research</p>
+        <h2 class="section-title reveal">Areas of inquiry</h2>
+        <p class="lede reveal reveal-d1">
+          My work sits at the interface of high-dimensional theory and data-driven methodology —
+          rigorous mathematics in the service of practical inference.
+        </p>
 
-      <div class="focus-grid">
-        <article class="focus-card">
-          <h3>High-Dimensional Inference</h3>
-          <p>
-            Developing adaptive procedures for selective inference and uncertainty quantification when the parameter
-            space far exceeds the sample size.
-          </p>
-          <ul class="key-topics">
-            <li>Sparsity-aware confidence sets</li>
-            <li>Post-selection validity</li>
-          </ul>
-        </article>
+        <div class="cards-grid">
+          <article class="card reveal">
+            <span class="card-no">&sect; i</span>
+            <h3>Change-Point Detection</h3>
+            <p>
+              Nonparametric, distance-based methods for detecting abrupt distributional shifts in
+              multivariate and high-dimensional data streams, with provable guarantees.
+            </p>
+            <div class="card-tags"><span>Pairwise distances</span><span>Sequential monitoring</span></div>
+          </article>
 
-        <article class="focus-card">
-          <h3>Change-Point Analysis</h3>
-          <p>
-            Designing nonparametric methods to detect abrupt distributional shifts in dependent data streams with
-            provable delay and false-alarm control.
-          </p>
-          <ul class="key-topics">
-            <li>Sequential monitoring</li>
-            <li>Bootstrap calibration</li>
-          </ul>
-        </article>
+          <article class="card reveal reveal-d1">
+            <span class="card-no">&sect; ii</span>
+            <h3>Nonparametric &amp; Distribution-Free Methods</h3>
+            <p>
+              Multivariate two-sample testing without distributional assumptions — including
+              graph-based runs tests built on the shortest Hamiltonian path.
+            </p>
+            <div class="card-tags"><span>Two-sample tests</span><span>Graph-based inference</span></div>
+          </article>
 
-        <article class="focus-card">
-          <h3>Statistical Learning Theory</h3>
-          <p>
-            Bridging empirical process techniques with modern learning models to understand generalisation in
-            structured prediction tasks.
-          </p>
-          <ul class="key-topics">
-            <li>Complexity regularisation</li>
-            <li>Robust representation learning</li>
-          </ul>
-        </article>
+          <article class="card reveal reveal-d2">
+            <span class="card-no">&sect; iii</span>
+            <h3>High-Dimensional Statistics</h3>
+            <p>
+              Inference in regimes where dimension outpaces sample size: asymptotics, robustness
+              under weak dependence, and heavy-tailed distributions.
+            </p>
+            <div class="card-tags"><span>HDLSS asymptotics</span><span>Robust inference</span></div>
+          </article>
+
+          <article class="card reveal reveal-d3">
+            <span class="card-no">&sect; iv</span>
+            <h3>Random Graph Models</h3>
+            <p>
+              Estimating motif counts and structural features of large networks, and understanding
+              the statistical behaviour of random graph functionals.
+            </p>
+            <div class="card-tags"><span>Motif estimation</span><span>Network inference</span></div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="publications" class="academic-section">
-      <h2>Selected Publications &amp; Preprints</h2>
-      <ol class="paper-list">
-        <li>
-          <strong>On High-Dimensional Change-Point Detection Based on Pairwise Distances.</strong>
-          <span class="authors">Spandan Ghoshal, Bilol Banerjee, and Anil K. Ghosh.</span>
-          <span class="venue">Preprint, 2025.</span>
-          <span class="paper-notes">
-            <a href="https://arxiv.org/abs/2511.10078" target="_blank" rel="noopener">arXiv:2511.10078</a>
-          </span>
-        </li>
-        <li>
-          <strong>On the large-sample consistency of the distribution-free multivariate two-sample runs test based on the shortest Hamiltonian path.</strong>
-          <span class="authors">Spandan Ghoshal and Anil K. Ghosh.</span>
-          <span class="venue">In preparation.</span>
-        </li>
-      </ol>
-      <div class="section-cta">
-        <a class="button" href="research.html">Full research page &rarr;</a>
+    <!-- ============ Publications ============ -->
+    <section class="section" id="publications">
+      <div class="container">
+        <p class="eyebrow reveal">Writing</p>
+        <h2 class="section-title reveal">Selected publications &amp; preprints</h2>
+
+        <ol class="pub-list">
+          <li class="pub-item reveal">
+            <div>
+              <p class="pub-title">On High-Dimensional Change-Point Detection Based on Pairwise Distances</p>
+              <p class="pub-authors"><span class="me">Spandan Ghoshal</span>, Bilol Banerjee, and Anil K. Ghosh</p>
+              <p class="pub-venue">Submitted to <em>Statistica Sinica</em></p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2511.10078" target="_blank" rel="noopener">arXiv:2511.10078</a>
+              </div>
+            </div>
+          </li>
+          <li class="pub-item reveal">
+            <div>
+              <p class="pub-title">A Graph-based Distribution-free Method for Change-point Analysis of High-dimension Data</p>
+              <p class="pub-authors"><span class="me">Spandan Ghoshal</span>, Trisha Dawn, D. Kundu, Angshuman Roy, and Anil K. Ghosh</p>
+              <p class="pub-venue">In preparation</p>
+            </div>
+          </li>
+        </ol>
+
+        <p style="margin-top: 2rem;" class="reveal">
+          <a class="btn btn-ghost" href="research.html">Full research page <span>&rarr;</span></a>
+        </p>
       </div>
     </section>
 
-    <section id="blog" class="blog-preview academic-section">
-      <h2>Recent Writing</h2>
-      <p class="blog-preview-intro">
-        Reflective essays at the intersection of research, music, and philosophy. A few recent entries:
-      </p>
+    <!-- ============ Blog preview ============ -->
+    <section class="section" id="blog-preview">
+      <div class="container">
+        <p class="eyebrow reveal">Journal</p>
+        <h2 class="section-title reveal">Recent writing</h2>
+        <p class="lede reveal reveal-d1">
+          Reflective essays at the intersection of research, music, and philosophy.
+        </p>
 
-      <div class="blog-cards">
-        <article class="blog-card">
-          <h3><a href="blog.html#post-spirituality-ai">Spirituality in the Age of AI</a></h3>
-          <p class="post-meta">November 14, 2025 · Reflections</p>
-          <p>
-            Why inner practices matter even as artificial intelligence reshapes our material pursuits.
-          </p>
-        </article>
-      </div>
+        <div class="post-grid">
+          <article class="post-card reveal">
+            <div class="post-card-body">
+              <p class="post-meta">June 11, 2026 &middot; <span class="post-cat">Dharma &amp; Mathematics</span></p>
+              <h3><a href="blog/vegetarianism-as-an-optimization-problem.html">Vegetarianism as an Optimization Problem</a></h3>
+              <p>Survival has a cost in life; the question is how to minimise it. A statistician reads the &#346;r&#299;mad-Bh&#257;gavatam.</p>
+              <a class="read-more" href="blog/vegetarianism-as-an-optimization-problem.html">Read essay <span class="arrow">&rarr;</span></a>
+            </div>
+          </article>
+          <article class="post-card reveal reveal-d1">
+            <div class="post-card-body">
+              <p class="post-meta">November 14, 2025 &middot; <span class="post-cat">Reflections</span></p>
+              <h3><a href="blog/spirituality-in-the-age-of-ai.html">Spirituality in the Age of AI</a></h3>
+              <p>Why inner practices matter even as artificial intelligence reshapes our material pursuits.</p>
+              <a class="read-more" href="blog/spirituality-in-the-age-of-ai.html">Read essay <span class="arrow">&rarr;</span></a>
+            </div>
+          </article>
+        </div>
 
-      <div class="blog-cta">
-        <a class="button" href="blog.html">Read the blog &rarr;</a>
+        <p style="margin-top: 2rem;" class="reveal">
+          <a class="btn btn-ghost" href="blog.html">All essays <span>&rarr;</span></a>
+        </p>
       </div>
     </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta-band">
+      <div class="container">
+        <h2 class="reveal">Let&rsquo;s talk statistics, music, or both.</h2>
+        <p class="reveal reveal-d1">
+          I am always glad to discuss research ideas, collaborations, or a good r&#257;ga.
+          The quickest way to reach me is by email.
+        </p>
+        <a class="btn reveal reveal-d2" href="mailto:ghoshalspandan@gmail.com">Write to me <span>&rarr;</span></a>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p><em>vande guroḥ śrī-caraṇāravindam</em> · &copy; 2025 Spandan Ghoshal</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-mantra">vande guro&#7717; &#347;r&#299;-cara&#7751;&#257;ravindam</p>
+      <div class="footer-links">
+        <a href="https://arxiv.org/search/?searchtype=author&amp;query=Ghoshal%2C+Spandan" target="_blank" rel="noopener">arXiv</a>
+        <a href="https://scholar.google.co.in/citations?user=7qqUX0IAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://www.youtube.com/@Spandan_Ghoshal" target="_blank" rel="noopener">YouTube</a>
+        <a href="mailto:ghoshalspandan@gmail.com">ghoshalspandan@gmail.com</a>
+      </div>
+      <p class="footer-meta">&copy; <span data-year>2026</span> Spandan Ghoshal</p>
+    </div>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>

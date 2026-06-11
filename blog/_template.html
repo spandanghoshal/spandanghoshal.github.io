@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- ================================================================
+     BLOG POST TEMPLATE — How to publish a new essay:
+
+     1. Copy this file and rename it, e.g.  blog/my-new-post.html
+        (use lowercase words separated by hyphens).
+     2. Replace every  POST_TITLE / POST_DATE / POST_CATEGORY /
+        POST_DECK / POST_SLUG  placeholder below.
+     3. Write your paragraphs inside <article class="article-body">.
+        - First paragraph: keep class="dropcap" for the large initial.
+        - Section break: <hr class="article-divider" />
+        - Quote:  <blockquote>…</blockquote>
+        - Image:  see the commented <figure> blocks below.
+          Put image files in  images/blog/  (create it if needed).
+     4. Add a matching card at the TOP of the post grid in blog.html
+        (a commented example is provided there).
+     5. Optionally add the post URL to sitemap.xml.
+     ================================================================ -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POST_TITLE — Spandan Ghoshal</title>
+  <meta name="description" content="POST_DECK" />
+  <meta name="author" content="Spandan Ghoshal" />
+  <link rel="canonical" href="https://spandanghoshal.github.io/blog/POST_SLUG.html" />
+  <meta property="og:title" content="POST_TITLE" />
+  <meta property="og:description" content="POST_DECK" />
+  <meta property="og:type" content="article" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Inter:wght@400..700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="brand" href="../index.html">Spandan <span class="brand-mark">Ghoshal</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M1 1h18M1 7h18M1 13h18"/>
+        </svg>
+      </button>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../research.html">Research</a>
+        <a href="../projects.html">Projects</a>
+        
+        <a href="../gallery.html">Gallery</a>
+        <a href="../blog.html" aria-current="page">Blog</a>
+        <a href="../music.html">Music</a>
+        <a class="nav-cv" href="../CV_June26.pdf" target="_blank">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="article-header">
+      <div class="container">
+        <p class="post-meta">POST_DATE &middot; <span class="post-cat">POST_CATEGORY</span></p>
+        <h1 class="article-title">POST_TITLE</h1>
+        <p class="article-deck">POST_DECK</p>
+      </div>
+    </header>
+
+    <!-- OPTIONAL hero image: uncomment and set src + caption.
+    <figure class="article-hero">
+      <img src="../images/blog/POST_SLUG-hero.jpg" alt="Describe the image" />
+      <figcaption>A short caption for the hero image.</figcaption>
+    </figure>
+    -->
+
+    <article class="article-body">
+      <p class="dropcap">
+        Your opening paragraph goes here. The first letter is rendered as a decorative drop cap,
+        so begin with a strong sentence.
+      </p>
+      <p>
+        Subsequent paragraphs are simple &lt;p&gt; elements.
+      </p>
+
+      <!-- OPTIONAL inline image:
+      <figure>
+        <img src="../images/blog/POST_SLUG-1.jpg" alt="Describe the image" loading="lazy" />
+        <figcaption>Caption for this figure.</figcaption>
+      </figure>
+      -->
+
+      <!-- OPTIONAL section divider: -->
+      <hr class="article-divider" />
+
+      <!-- OPTIONAL pull quote:
+      <blockquote>A line worth lingering on.</blockquote>
+      -->
+
+      <p>
+        Closing paragraph.
+      </p>
+    </article>
+
+    <div class="article-footer">
+      <a class="btn btn-ghost" href="../blog.html">&larr; All essays</a>
+      <a class="btn btn-ghost" href="mailto:spandan.ghoshal_r@isical.ac.in">Discuss by email</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-mantra">vande guro&#7717; &#347;r&#299;-cara&#7751;&#257;ravindam</p>
+      <div class="footer-links">
+        <a href="https://arxiv.org/search/?searchtype=author&amp;query=Ghoshal%2C+Spandan" target="_blank" rel="noopener">arXiv</a>
+                
+        <a href="https://scholar.google.co.in/citations?user=7qqUX0IAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://www.youtube.com/@Spandan_Ghoshal" target="_blank" rel="noopener">YouTube</a>
+        <a href="mailto:ghoshalspandan@gmail.com">ghoshalspandan@gmail.com</a>
+      </div>
+      <p class="footer-meta">&copy; <span data-year>2026</span> Spandan Ghoshal</p>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>

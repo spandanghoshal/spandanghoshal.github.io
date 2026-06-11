@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vegetarianism as an Optimization Problem — Spandan Ghoshal</title>
+  <meta name="description" content="Survival has a cost in life; the question is how to minimise it. A statistician's reading of vegetarianism through constrained optimization and the Śrīmad-Bhāgavatam." />
+  <meta name="author" content="Spandan Ghoshal" />
+  <link rel="canonical" href="https://spandanghoshal.github.io/blog/vegetarianism-as-an-optimization-problem.html" />
+  <meta property="og:title" content="Vegetarianism as an Optimization Problem" />
+  <meta property="og:description" content="Survival has a cost in life; the question is how to minimise it. A statistician reads the Śrīmad-Bhāgavatam." />
+  <meta property="og:type" content="article" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Inter:wght@400..700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script>
+    MathJax = { tex: { inlineMath: [['\\(', '\\)']] } };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="brand" href="../index.html">Spandan <span class="brand-mark">Ghoshal</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M1 1h18M1 7h18M1 13h18"/>
+        </svg>
+      </button>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../research.html">Research</a>
+        <a href="../projects.html">Projects</a>
+        
+        <a href="../gallery.html">Gallery</a>
+        <a href="../blog.html" aria-current="page">Blog</a>
+        <a href="../music.html">Music</a>
+        <a class="nav-cv" href="../CV_June26.pdf" target="_blank">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="article-header">
+      <div class="container">
+        <p class="post-meta">June 11, 2026 &middot; <span class="post-cat">Dharma &amp; Mathematics</span></p>
+        <h1 class="article-title">Vegetarianism as an Optimization Problem</h1>
+        <p class="article-deck">
+          Survival has a cost in life; the question is how to minimise it.
+          A statistician reads the &#346;r&#299;mad-Bh&#257;gavatam.
+        </p>
+      </div>
+    </header>
+
+    <article class="article-body">
+      <p class="dropcap">
+        Every living being, simply by living, imposes a cost on other living beings. This is not a
+        modern ecological insight; the Bh&#257;gavata Pur&#257;&#7751;a stated it with startling
+        directness millennia ago, in a verse N&#257;rada speaks to Yudhi&#7779;&#7789;hira:
+      </p>
+
+      <blockquote class="verse">
+        ahast&#257;ni sahast&#257;n&#257;m<br />
+        apad&#257;ni catu&#7779;-pad&#257;m<br />
+        phalg&#363;ni tatra mahat&#257;&#7747;<br />
+        j&#299;vo j&#299;vasya j&#299;vanam
+        <span class="translation">
+          &ldquo;Those who are devoid of hands are prey for those who have hands; those devoid of legs
+          are prey for the four-legged. The weak are the subsistence of the strong, and the general
+          rule holds that one living being is food for another.&rdquo;
+        </span>
+        <cite>&#346;r&#299;mad-Bh&#257;gavatam 1.13.47</cite>
+      </blockquote>
+
+      <p>
+        <em>J&#299;vo j&#299;vasya j&#299;vanam</em> &mdash; one life is the life of another. There is
+        no diet, however carefully chosen, whose harm is exactly zero. Even the strictest vegetarian
+        ends the lives of plants, displaces insects in the field, consumes water that other creatures
+        needed. The honest question, then, is not the binary one &mdash; <em>to harm or not to
+        harm?</em> &mdash; for that question has no feasible answer. The honest question is an
+        optimization problem: <em>given that survival has a cost in life, how should that cost be
+        minimised?</em>
+      </p>
+
+      <hr class="article-divider" />
+
+      <h2>The problem, stated properly</h2>
+
+      <p>
+        Let there be \(k\) available food sources, and let \(x_i \ge 0\) denote the quantity of source
+        \(i\) consumed per unit time. Each source carries a nutritional profile
+        \(n_{ij}\) &mdash; the amount of nutrient \(j\) supplied per unit of source \(i\) &mdash; and
+        a harm coefficient \(h_i \ge 0\): the expected suffering inflicted per unit consumed. A diet
+        \(x = (x_1, \dots, x_k)\) is feasible if it sustains the body. The problem is then the linear
+        program
+      </p>
+
+      <p>
+        \[
+          \min_{x \,\ge\, 0} \; \sum_{i=1}^{k} h_i\, x_i
+          \qquad \text{subject to} \qquad
+          \sum_{i=1}^{k} n_{ij}\, x_i \;\ge\; N_j, \quad j = 1, \dots, m,
+        \]
+      </p>
+
+      <p>
+        where \(N_j\) is the body&rsquo;s requirement of nutrient \(j\). Two features of this
+        formulation deserve attention. First, the constraint set is non-empty &mdash; survival is
+        permitted; the &#346;&#257;stra never demands self-starvation. Second, the objective is
+        <em>minimisation</em>, not elimination: the optimum \(\sum h_i x_i^\ast\) will be strictly
+        positive. <em>Ahi&#7747;s&#257;</em>, in this reading, is not the impossible claim that one can
+        live harmlessly; it is the discipline of living at the minimum of the harm functional.
+      </p>
+
+      <h2>Estimating the harm coefficients</h2>
+
+      <p>
+        The mathematics is trivial; the statistics is not. The entire content of the problem lies in
+        the coefficients \(h_i\), and suffering is only partially observable. Yet we do not need
+        precise values &mdash; a linear programme&rsquo;s minimiser is determined by the relative
+        ordering of the ratios \(h_i / n_{ij}\), so a defensible <em>partial order</em> on the
+        \(h_i\) suffices. And nature provides estimators.
+      </p>
+
+      <p>
+        Consider how each food is relinquished by its source. A ripe fruit detaches from the tree by
+        itself &mdash; botanists call it abscission: the plant builds a dedicated layer of cells whose
+        function is to let go. The mango is, in a quite literal sense, offered; the tree&rsquo;s
+        reproductive strategy depends on the fruit being eaten and the seed carried away. Grains are
+        gathered from annual grasses at the natural end of their life cycle. Milk, in the traditional
+        economy, is taken from an animal that continues to live and is cared for. Now compare the other
+        column of the menu: no limb of any animal detaches by itself. Flesh is obtained only by
+        traumatic interruption of a life that was, by every behavioural and neurological measure,
+        strenuously trying to continue. Animals possess nociceptors, centralised nervous systems,
+        stress hormones, and unmistakable avoidance behaviour; a fruit tree exhibits none of these in
+        respect of its fruit. Whatever one&rsquo;s uncertainty about plant sentience, the
+        <em>difference</em> in harm between a fallen fruit and a slaughtered animal is not a matter of
+        decimal places &mdash; it is orders of magnitude, in opposite directions of the scale.
+      </p>
+
+      <p>
+        So we may write, with more confidence than we usually have about any estimated parameter,
+      </p>
+
+      <p>
+        \[
+          h_{\text{fruit}} \;\approx\; 0
+          \;&lt;\; h_{\text{grain}} \;&lt;\; h_{\text{root}}
+          \;\ll\; h_{\text{animal}}.
+        \]
+      </p>
+
+      <p>
+        The conclusion is then forced by the structure of the programme itself. Because the harm gap
+        between plant and animal sources dwarfs any difference in their nutritional profiles, the
+        minimiser \(x^\ast\) concentrates its mass entirely on the plant side of the menu: fruits,
+        grains, legumes, vegetables, milk. The solution is also <em>robust</em> &mdash; the statistician&rsquo;s
+        favourite property: perturb the \(h_i\) by any reasonable amount, model plant suffering as
+        generously as you like, and the argmin does not move. A vegetarian diet is not the sentimental
+        choice; it is the stable solution of the harm-minimisation programme under every defensible
+        specification of its parameters.
+      </p>
+
+      <hr class="article-divider" />
+
+      <h2>The constraint set, and who wrote it</h2>
+
+      <p>
+        It is worth asking why the constraint is \(\sum n_{ij} x_i \ge N_j\) and not
+        &ldquo;maximise enjoyment.&rdquo; The &#298;&#347;opani&#7779;ad opens with precisely this
+        point &mdash; consumption is legitimate only up to one&rsquo;s allotted share:
+      </p>
+
+      <blockquote class="verse">
+        &#299;&#347;&#257;v&#257;syam ida&#7747; sarva&#7747;<br />
+        yat ki&ntilde;ca jagaty&#257;&#7747; jagat<br />
+        tena tyaktena bhu&ntilde;j&#299;th&#257;<br />
+        m&#257; g&#7771;dha&#7717; kasya svid dhanam
+        <span class="translation">
+          &ldquo;Everything animate or inanimate within the universe is controlled and owned by the
+          Lord. One should therefore accept only those things necessary for himself, which are set
+          aside as his quota, and not accept other things, knowing well to whom they belong.&rdquo;
+        </span>
+        <cite>&#346;r&#299; &#298;&#347;opani&#7779;ad, Mantra 1</cite>
+      </blockquote>
+
+      <p>
+        Read mathematically, the mantra fixes the feasible region: take what is needed
+        (<em>tena tyaktena bhu&ntilde;j&#299;th&#257;</em> &mdash; accept your set-aside portion), and
+        do not covet beyond it (<em>m&#257; g&#7771;dha&#7717;</em>). Greed is the act of replacing a
+        constraint-satisfaction problem with an unconstrained maximisation &mdash; and most of the
+        violence in the food economy enters through exactly that substitution.
+      </p>
+
+      <p>
+        And the Bhagavad-g&#299;t&#257; specifies, with the brevity of a well-posed boundary condition,
+        which column of the menu is fit to be offered at all:
+      </p>
+
+      <blockquote class="verse">
+        patra&#7747; pu&#7779;pa&#7747; phala&#7747; toya&#7747;<br />
+        yo me bhakty&#257; prayacchati<br />
+        tad aha&#7747; bhakty-upah&#7771;tam<br />
+        a&#347;n&#257;mi prayat&#257;tmana&#7717;
+        <span class="translation">
+          &ldquo;If one offers Me with love and devotion a leaf, a flower, fruit or water,
+          I will accept it.&rdquo;
+        </span>
+        <cite>Bhagavad-g&#299;t&#257; 9.26</cite>
+      </blockquote>
+
+      <p>
+        A leaf, a flower, a fruit, water: notice that the list is precisely the set of foods whose
+        harm coefficients sit at the bottom of our ordering. The g&#299;t&#257;&rsquo;s menu and the
+        linear programme&rsquo;s argmin coincide &mdash; which should not surprise us. The tradition
+        had solved the optimization problem by inspection, long before anyone wrote down the
+        Lagrangian.
+      </p>
+
+      <hr class="article-divider" />
+
+      <h2>What the model does and does not claim</h2>
+
+      <p>
+        A model is a lens, not a verdict, and intellectual honesty requires stating its limits. The
+        harm coefficients are estimated, not measured; suffering admits no direct observation, and one
+        should hold the numbers loosely even while trusting the ordering. The linearity is a
+        convenience; real harm may compound. And no optimization argument captures what is, for the
+        practitioner, the heart of the matter &mdash; that food prepared and offered with devotion
+        (<em>pras&#257;da</em>) transforms eating from an act of consumption into an act of
+        participation.
+      </p>
+
+      <p>
+        But perhaps that is the deepest point of contact between the two ways of thinking. Both the
+        statistician and the &#347;&#257;stra begin by refusing a comfortable illusion: that our living
+        costs nothing. Both then ask the same disciplined question &mdash; <em>given the cost, what is
+        the least of it?</em> The Bh&#257;gavatam states the constraint, the Upani&#7779;ad bounds the
+        feasible region, the G&#299;t&#257; exhibits the solution. The mathematics merely checks the
+        arithmetic of a wisdom that was always there: <em>j&#299;vo j&#299;vasya j&#299;vanam</em> is
+        the model, and <em>ahi&#7747;s&#257;</em> is its minimiser.
+      </p>
+    </article>
+
+    <div class="article-footer">
+      <a class="btn btn-ghost" href="../blog.html">&larr; All essays</a>
+      <a class="btn btn-ghost" href="mailto:ghoshalspandan@gmail.com">Discuss by email</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-mantra">vande guro&#7717; &#347;r&#299;-cara&#7751;&#257;ravindam</p>
+      <div class="footer-links">
+        <a href="https://arxiv.org/search/?searchtype=author&amp;query=Ghoshal%2C+Spandan" target="_blank" rel="noopener">arXiv</a>
+                
+        <a href="https://scholar.google.co.in/citations?user=7qqUX0IAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://www.youtube.com/@Spandan_Ghoshal" target="_blank" rel="noopener">YouTube</a>
+        <a href="mailto:ghoshalspandan@gmail.com">ghoshalspandan@gmail.com</a>
+      </div>
+      <p class="footer-meta">&copy; <span data-year>2026</span> Spandan Ghoshal</p>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>

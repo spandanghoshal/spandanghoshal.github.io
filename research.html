@@ -3,97 +3,175 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spandan Ghoshal — Research</title>
-  <meta name="description" content="Research by Spandan Ghoshal — preprints and ongoing work in high-dimensional change-point detection, nonparametric statistics, and multivariate two-sample testing." />
-  <meta name="keywords" content="Spandan Ghoshal research, statistics preprints, change-point detection, Hamiltonian path test, ISI Kolkata" />
+  <title>Research — Spandan Ghoshal</title>
+  <meta name="description" content="Research by Spandan Ghoshal — preprints and ongoing work in high-dimensional change-point detection, nonparametric statistics, multivariate two-sample testing, and random graph models." />
+  <meta name="keywords" content="Spandan Ghoshal research, statistics preprints, change-point detection, Hamiltonian path test, random graphs, motif estimation, ISI Kolkata" />
   <meta name="author" content="Spandan Ghoshal" />
   <link rel="canonical" href="https://spandanghoshal.github.io/research.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Inter:wght@400..700&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="header">
-    <h1>Research</h1>
-    <p class="tagline">Preprints, ongoing projects, and areas of inquiry.</p>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="brand" href="index.html">Spandan <span class="brand-mark">Ghoshal</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M1 1h18M1 7h18M1 13h18"/>
+        </svg>
+      </button>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="research.html" aria-current="page">Research</a>
+        <a href="projects.html">Projects</a>
+        
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="music.html">Music</a>
+        <a class="nav-cv" href="CV_June26.pdf" target="_blank">CV</a>
+      </nav>
+    </div>
   </header>
 
-  <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="research.html" aria-current="page">Research</a>
-    <a href="projects.html">Projects</a>
-    <a href="notes.html">Notes</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="blog.html">Blog</a>
-    <a href="music.html">Music</a>
-    <a href="CV_June26.pdf" target="_blank">CV</a>
-  </nav>
-
   <main>
-    <section class="academic-section">
-      <h2>Current Focus</h2>
-      <p class="section-intro">
-        I am broadly interested in high-dimensional inference and sequential methods for dependent data. Much of my
-        present work explores nonparametric change-point detection, with an emphasis on procedures that remain robust
-        under weak dependence and heavy-tailed distributions.
-      </p>
+    <header class="page-header">
+      <div class="container">
+        <p class="eyebrow reveal is-visible">Research</p>
+        <h1 class="reveal is-visible">Preprints, ongoing projects,<br />and areas of inquiry.</h1>
+        <p class="lede reveal reveal-d1 is-visible">
+          I am broadly interested in nonparametric inference and sequential methods for dependent data —
+          procedures that remain robust under weak dependence and heavy tails.
+        </p>
+      </div>
+    </header>
 
-      <div class="focus-grid">
-        <article class="focus-card">
-          <h3>High-Dimensional Inference</h3>
-          <p>
-            Selective inference and uncertainty quantification in regimes where the number of parameters greatly
-            exceeds the sample size.
-          </p>
-        </article>
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow reveal">Focus</p>
+        <h2 class="section-title reveal">Current directions</h2>
 
-        <article class="focus-card">
-          <h3>Change-Point Detection</h3>
-          <p>
-            Nonparametric, distance-based methods for identifying distributional shifts in multivariate and
-            high-dimensional data streams.
-          </p>
-        </article>
+        <div class="cards-grid">
+          <article class="card reveal">
+            <span class="card-no">&sect; i</span>
+            <h3>Change-Point Detection</h3>
+            <p>
+              Nonparametric, distance-based methods for identifying distributional shifts in
+              multivariate and high-dimensional data streams, with control over detection delay
+              and false alarms.
+            </p>
+            <div class="card-tags"><span>Pairwise distances</span><span>Bootstrap calibration</span></div>
+          </article>
 
-        <article class="focus-card">
-          <h3>Statistical Learning</h3>
-          <p>
-            Complexity regularisation, empirical process theory, and generalisation bounds for structured
-            prediction problems.
-          </p>
-        </article>
+          <article class="card reveal reveal-d1">
+            <span class="card-no">&sect; ii</span>
+            <h3>Distribution-Free Testing</h3>
+            <p>
+              Multivariate two-sample problems approached through combinatorial and graph-based
+              statistics — notably runs tests built on the shortest Hamiltonian path.
+            </p>
+            <div class="card-tags"><span>Runs tests</span><span>Consistency theory</span></div>
+          </article>
+
+          <article class="card reveal reveal-d2">
+            <span class="card-no">&sect; iii</span>
+            <h3>High-Dimensional Statistics</h3>
+            <p>
+              Asymptotic behaviour of inference procedures when the dimension grows with — or far
+              exceeds — the sample size, including HDLSS regimes.
+            </p>
+            <div class="card-tags"><span>HDLSS asymptotics</span><span>Heavy tails</span></div>
+          </article>
+
+          <article class="card reveal reveal-d3">
+            <span class="card-no">&sect; iv</span>
+            <h3>Random Graphs &amp; Motifs</h3>
+            <p>
+              Estimation of motif counts and structural functionals in large random graphs, and the
+              statistical properties of such estimators under different sampling models.
+            </p>
+            <div class="card-tags"><span>Motif estimation</span><span>Network models</span></div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="academic-section">
-      <h2>Preprints</h2>
-      <ol class="paper-list">
-        <li>
-          <strong>On High-Dimensional Change-Point Detection Based on Pairwise Distances.</strong>
-          <span class="authors">Spandan Ghoshal, Bilol Banerjee, and Anil K. Ghosh.</span>
-          <span class="venue">Preprint, 2025.</span>
-          <span class="paper-notes">
-            <a href="https://arxiv.org/abs/2511.10078" target="_blank" rel="noopener">arXiv:2511.10078</a>
-          </span>
-        </li>
-      </ol>
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow reveal">Papers</p>
+        <h2 class="section-title reveal">Preprints</h2>
+        <ol class="pub-list">
+          <li class="pub-item reveal">
+            <div>
+              <p class="pub-title">On High-Dimensional Change-Point Detection Based on Pairwise Distances</p>
+              <p class="pub-authors"><span class="me">Spandan Ghoshal</span>, Bilol Banerjee, and Anil K. Ghosh</p>
+              <p class="pub-venue">Submitted to <em>Statistica Sinica</em></p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2511.10078" target="_blank" rel="noopener">arXiv:2511.10078</a>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
     </section>
 
-    <section class="academic-section">
-      <h2>Ongoing Work</h2>
-      <ol class="paper-list">
-        <li>
-          <strong>On the large-sample consistency of the distribution-free multivariate two-sample runs test based on the shortest Hamiltonian path.</strong>
-          <span class="authors">Spandan Ghoshal and Anil K. Ghosh.</span>
-          <span class="venue">In preparation.</span>
-        </li>
-      </ol>
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow reveal">In progress</p>
+        <h2 class="section-title reveal">Ongoing work</h2>
+        <ol class="pub-list">
+          <li class="pub-item reveal">
+            <div>
+              <p class="pub-title">A Graph-based Distribution-free Method for Change-point Analysis of High-dimension Data</p>
+              <p class="pub-authors"><span class="me">Spandan Ghoshal</span>, Trisha Dawn, D. Kundu, Angshuman Roy, and Anil K. Ghosh</p>
+              <p class="pub-venue">In preparation &mdash; with collaborators at ISI Kolkata, Texas A&amp;M University, Iowa State University, and IIT Tirupati</p>
+            </div>
+          </li>
+          <li class="pub-item reveal">
+            <div>
+              <p class="pub-title">Hierarchical Clustering for Multiple Change-Point Detection in High-Dimensions</p>
+              <p class="pub-authors"><span class="me">Spandan Ghoshal</span>, Trisha Dawn, and Angshuman Roy</p>
+              <p class="pub-venue">In preparation</p>
+            </div>
+          </li>
+          <li class="pub-item reveal">
+            <div>
+              <p class="pub-title">On the Large-Sample Consistency of the Distribution-Free Multivariate Two-Sample Runs Test Based on the Shortest Hamiltonian Path</p>
+              <p class="pub-authors"><span class="me">Spandan Ghoshal</span> and Anil K. Ghosh</p>
+              <p class="pub-venue">In preparation</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2 class="reveal">Interested in collaborating?</h2>
+        <p class="reveal reveal-d1">
+          If our research interests overlap &mdash; or you simply want to discuss an idea &mdash; I would be
+          delighted to hear from you.
+        </p>
+        <a class="btn reveal reveal-d2" href="mailto:ghoshalspandan@gmail.com">Write to me <span>&rarr;</span></a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p><em>All glories to Śrī Guru and Gaurāṅga</em> · &copy; 2025 Spandan Ghoshal</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-mantra">vande guro&#7717; &#347;r&#299;-cara&#7751;&#257;ravindam</p>
+      <div class="footer-links">
+        <a href="https://arxiv.org/search/?searchtype=author&amp;query=Ghoshal%2C+Spandan" target="_blank" rel="noopener">arXiv</a>
+        <a href="https://scholar.google.co.in/citations?user=7qqUX0IAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://www.youtube.com/@Spandan_Ghoshal" target="_blank" rel="noopener">YouTube</a>
+        <a href="mailto:ghoshalspandan@gmail.com">ghoshalspandan@gmail.com</a>
+      </div>
+      <p class="footer-meta">&copy; <span data-year>2026</span> Spandan Ghoshal</p>
+    </div>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>

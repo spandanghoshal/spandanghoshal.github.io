@@ -3,95 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spandan Ghoshal — Gallery</title>
+  <title>Gallery — Spandan Ghoshal</title>
   <meta name="description" content="A visual mosaic of moments from the life of Spandan Ghoshal — research, music, and contemplation." />
   <meta name="author" content="Spandan Ghoshal" />
   <link rel="canonical" href="https://spandanghoshal.github.io/gallery.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Inter:wght@400..700&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="header">
-    <h1>Gallery</h1>
-    <p class="tagline">Snapshots from journeys in research, music, and mindful living.</p>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="brand" href="index.html">Spandan <span class="brand-mark">Ghoshal</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M1 1h18M1 7h18M1 13h18"/>
+        </svg>
+      </button>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        
+        <a href="gallery.html" aria-current="page">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="music.html">Music</a>
+        <a class="nav-cv" href="CV_June26.pdf" target="_blank">CV</a>
+      </nav>
+    </div>
   </header>
 
-  <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="projects.html">Projects</a>
-    <a href="notes.html">Notes</a>
-    <a href="gallery.html" aria-current="page">Gallery</a>
-    <a href="blog.html">Blog</a>
-    <a href="music.html">Music</a>
-    <a href="CV_June26.pdf" target="_blank">CV</a>
-  </nav>
-
   <main>
-    <section class="gallery-section">
-      <h2>Moments Worth Revisiting</h2>
-      <p class="gallery-intro">
-        Every photograph here marks a milestone—a breakthrough derivation, a meditative sunrise, or a performance
-        that reminded me why practice matters. Hover over any image for context.
-      </p>
+    <header class="page-header">
+      <div class="container">
+        <p class="eyebrow reveal is-visible">Gallery</p>
+        <h1 class="reveal is-visible">Moments worth<br />revisiting.</h1>
+        <p class="lede reveal reveal-d1 is-visible">
+          Snapshots from journeys in research, music, and mindful living. Hover over any image for context.
+        </p>
+      </div>
+    </header>
 
-      <div class="gallery-grid">
-        <figure class="gallery-item span-3">
-          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Researcher writing equations on a glass board" />
-          <figcaption>Late-night whiteboard session before a conference submission.</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=700&q=80" alt="Close-up of scribbled mathematical notes" />
-          <figcaption>Derivative trails that shaped my thesis chapters.</figcaption>
-        </figure>
-        <figure class="gallery-item span-2">
-          <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80" alt="Person playing a wooden flute on stage" />
-          <figcaption>Soundcheck before my first solo bansuri recital.</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=700&q=80" alt="Books and a cup of tea on a desk" />
-          <figcaption>Tea-fuelled reading between seminars.</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=700&q=80" alt="Mist-filled mountains and a river valley" />
-          <figcaption>Dawn over the Brahmaputra during field sampling.</figcaption>
-        </figure>
-        <figure class="gallery-item span-2">
-          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Team collaborating on laptops in a warm workspace" />
-          <figcaption>Collaborative coding sprint with lab-mates.</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=700&q=80" alt="Temple dome against a twilight sky" />
-          <figcaption>Evening kīrtan at a riverside temple.</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?auto=format&fit=crop&w=700&q=80" alt="People dancing in traditional attire" />
-          <figcaption>Joyful dance during a community cultural festival.</figcaption>
-        </figure>
-        <figure class="gallery-item span-3">
-          <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1200&q=80" alt="Close-up of handwritten mathematical proofs" />
-          <figcaption>Pages of drafts that ultimately became a published paper.</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1437915015400-137312b61975?auto=format&fit=crop&w=700&q=80" alt="City skyline lit up at night" />
-          <figcaption>Twilight reflections after a seminar in Mumbai.</figcaption>
-        </figure>
-        <figure class="gallery-item span-2">
-          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80" alt="Student presenting at a conference" />
-          <figcaption>Presenting change-point findings to an engaged audience.</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1515169067865-5387ec356754?auto=format&fit=crop&w=700&q=80" alt="Close-up of harmonium keys" />
-          <figcaption>Harmonium riyāz on a quiet Sunday afternoon.</figcaption>
-        </figure>
+    <section class="section">
+      <div class="container">
+        <div class="gallery-grid">
+          <figure class="gallery-item span-3 reveal">
+            <img src="images/ICTS Networks Workshop 2026 Research Group Topic Motif Estimation in Egocentric Network Sampling Model.jpg" alt="ICTS Networks Workshop 2026 — Research Group Presentation" loading="lazy" />
+            <figcaption>ICTS Networks Workshop 2026 — Research group presentation on motif estimation in egocentric network sampling models.</figcaption>
+          </figure>
+          <figure class="gallery-item span-3 reveal">
+            <img src="images/ISEC Batch of 2024-25.jpg" alt="ISEC Batch of 2024–25" loading="lazy" />
+            <figcaption>ISEC Batch of 2024–25.</figcaption>
+          </figure>
+          <figure class="gallery-item span-3 reveal">
+            <img src="images/PGDBA Last Class 2025.jpg" alt="PGDBA Last Class, 2025" loading="lazy" />
+            <figcaption>Last class of the PGDBA programme, 2025.</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p><em>All glories to Śrī Guru and Gaurāṅga</em> · &copy; 2025 Spandan Ghoshal</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-mantra">vande guro&#7717; &#347;r&#299;-cara&#7751;&#257;ravindam</p>
+      <div class="footer-links">
+        <a href="https://arxiv.org/search/?searchtype=author&amp;query=Ghoshal%2C+Spandan" target="_blank" rel="noopener">arXiv</a>
+        <a href="https://scholar.google.co.in/citations?user=7qqUX0IAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://www.youtube.com/@Spandan_Ghoshal" target="_blank" rel="noopener">YouTube</a>
+        <a href="mailto:ghoshalspandan@gmail.com">ghoshalspandan@gmail.com</a>
+      </div>
+      <p class="footer-meta">&copy; <span data-year>2026</span> Spandan Ghoshal</p>
+    </div>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
