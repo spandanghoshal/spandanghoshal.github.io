@@ -783,6 +783,16 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 540; line-height: 1.
 }
 .page-header .lede { font-size: 1.2rem; }
 
+/* Plain variant: no eyebrow label, italic accent on the second line
+   instead — used on pages where the section below already carries
+   its own eyebrow, so the page doesn't open with two in a row. */
+.page-header-plain { padding: 5.6rem 0 1.4rem; }
+.page-header-plain h1 em {
+  font-style: italic;
+  font-weight: 420;
+  color: var(--accent);
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   border-top: 1px solid var(--rule);
