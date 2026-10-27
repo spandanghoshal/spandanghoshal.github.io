@@ -6,6 +6,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://spandanghoshal.github.io/teaching.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://spandanghoshal.github.io/research.html</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
