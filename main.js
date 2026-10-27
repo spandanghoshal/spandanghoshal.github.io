@@ -62,6 +62,26 @@
     fig.classList.add("fig-animate");
   }
 
+  /* Mandala background layer: two large mandalas that turn slowly as the page scrolls */
+  (function () {
+    var layer = document.createElement("div");
+    layer.className = "mandala-layer";
+    layer.setAttribute("aria-hidden", "true");
+    layer.innerHTML = '<div class="mandala mandala--a"></div><div class="mandala mandala--b"></div>';
+    document.body.insertBefore(layer, document.body.firstChild);
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) return;
+    var ticking = false;
+    var update = function () {
+      layer.style.setProperty("--spin", (window.scrollY * 0.05).toFixed(2));
+      ticking = false;
+    };
+    window.addEventListener("scroll", function () {
+      if (!ticking) { ticking = true; window.requestAnimationFrame(update); }
+    }, { passive: true });
+    update();
+  })();
+
   /* Footer year */
   var year = document.querySelector("[data-year]");
   if (year) year.textContent = new Date().getFullYear();

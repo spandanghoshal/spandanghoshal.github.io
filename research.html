@@ -31,7 +31,7 @@
         <a href="gallery.html">Gallery</a>
         <a href="blog.html">Blog</a>
         <a href="music.html">Music</a>
-        <a class="nav-cv" href="CV_June26.pdf" target="_blank">CV</a>
+        <a class="nav-cv" href="CV_Oct26.pdf" target="_blank">CV</a>
       </nav>
     </div>
   </header>
@@ -41,8 +41,7 @@
       <div class="container">
         <h1 class="reveal is-visible">Preprints, ongoing projects,<br /><em>and areas of inquiry.</em></h1>
         <p class="lede reveal reveal-d1 is-visible">
-          Broadly: nonparametric inference and sequential methods for dependent data &mdash; procedures
-          that stay robust under weak dependence and heavy tails.
+          My research is in nonparametric inference and high-dimensional statistics, with a focus on change-point detection, two-sample testing, and random graph models.
         </p>
       </div>
     </header>
@@ -81,7 +80,7 @@
               Asymptotic behaviour of inference procedures when the dimension grows with or far
               exceeds the sample size, including HDLSS regimes.
             </p>
-            <div class="card-tags"><span>HDLSS asymptotics</span><span>Heavy tails</span></div>
+            <div class="card-tags"><span>HDLSS asymptotics</span><span>Distance-based inference</span></div>
           </article>
 
           <article class="card reveal reveal-d3">
@@ -106,15 +105,55 @@
             <div>
               <p class="pub-title">On High-Dimensional Change-Point Detection Based on Pairwise Distances</p>
               <p class="pub-authors"><span class="me">Spandan Ghoshal</span>, Bilol Banerjee, and Anil K. Ghosh</p>
-              <p class="pub-venue">Submitted to <em>Statistica Sinica</em></p>
+              <p class="pub-venue">Under major revision, <em>Statistica Sinica</em></p>
               <div class="pub-links">
                 <a href="https://arxiv.org/abs/2511.10078" target="_blank" rel="noopener">arXiv:2511.10078</a>
+                <a href="#demo">Live demo</a>
               </div>
             </div>
           </li>
-        </ol>
+                  <li class="pub-item reveal">
+            <div>
+              <p class="pub-title">Third and Fourth Moment Phenomena for Monochromatic Edges and Applications to Graph-Based Two-Sample Tests</p>
+              <p class="pub-authors">Siva Athreya, Bhaswar B. Bhattacharya, Yogesh Dahiya, Karambir Das, <span class="me">Spandan Ghoshal</span>, Sourish Maniyar, and Elizabeth Sara Roy</p>
+              <p class="pub-venue">Preprint, October 2026</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2610.29215" target="_blank" rel="noopener">arXiv:2610.29215</a>
+              </div>
+            </div>
+          </li>
+</ol>
       </div>
     </section>
+
+    <section class="section" id="demo">
+      <div class="container">
+        <p class="eyebrow reveal">Demonstration</p>
+        <h2 class="section-title reveal">The idea, in motion</h2>
+        <p class="lede reveal reveal-d1">
+          A live illustration of <a href="https://arxiv.org/abs/2511.10078" target="_blank" rel="noopener">change-point detection based on pairwise distances</a>.
+          In high dimensions a shift can be spread thinly over many coordinates, invisible in any single one,
+          yet it leaves a clear block pattern in the distances between observations.
+        </p>
+        <figure class="fig-frame cpviz" aria-label="Animated simulation: a 60-dimensional data stream with two change-points, its pairwise distance matrix, and a scan statistic that detects both changes">
+          <div class="cpviz-grid">
+            <div class="cpviz-col">
+              <p class="cpviz-label"><span>(a)</span> A 60-dimensional data stream</p>
+              <canvas class="cpviz-heat"></canvas>
+              <p class="cpviz-label cpviz-label--gap"><span>(c)</span> Scan statistic from pairwise distances</p>
+              <canvas class="cpviz-scan"></canvas>
+            </div>
+            <div class="cpviz-col">
+              <p class="cpviz-label"><span>(b)</span> Pairwise distance matrix</p>
+              <canvas class="cpviz-dist"></canvas>
+              <div class="cpviz-readout" aria-live="polite"></div>
+            </div>
+          </div>
+          <figcaption class="fig-caption"><strong>Fig. 1.</strong> A simulated 60-dimensional sequence with two change-points: a sparse mean shift in 12 coordinates, barely visible by eye, followed by a change in scale. As the data arrive, the matrix of generalized pairwise distances (b) develops a block structure, and a scan statistic built from it (c) locates both changes by binary segmentation. A fresh sample is drawn on every cycle.</figcaption>
+        </figure>
+      </div>
+    </section>
+
 
     <section class="section">
       <div class="container">
@@ -137,11 +176,41 @@
           </li>
           <li class="pub-item reveal">
             <div>
-              <p class="pub-title">On the Large-Sample Consistency of the Distribution-Free Multivariate Two-Sample Runs Test Based on the Shortest Hamiltonian Path</p>
+              <p class="pub-title">Universal Consistency of the Distribution-Free Multivariate Runs Test Based on the Shortest Hamiltonian Path</p>
               <p class="pub-authors"><span class="me">Spandan Ghoshal</span> and Anil K. Ghosh</p>
               <p class="pub-venue">In preparation</p>
             </div>
           </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="talks">
+      <div class="container">
+        <p class="eyebrow reveal">Meetings</p>
+        <h2 class="section-title reveal">Conferences &amp; workshops</h2>
+        <ol class="pub-list">
+          <li class="pub-item reveal"><div>
+            <p class="pub-title">Modern Trends in Probability and Statistics (Basu-Bahadur Memorial Conference)</p>
+            <p class="pub-venue">Indian Statistical Institute, Kolkata &middot; December 18 to 22, 2026 &middot; Presenting</p>
+            <div class="pub-links"><a href="https://sites.google.com/view/mtps-2026/home" target="_blank" rel="noopener">Conference page</a></div>
+          </div></li>
+          <li class="pub-item reveal"><div>
+            <p class="pub-title">Program on Selective Inference</p>
+            <p class="pub-venue">Indian School of Business, Hyderabad &middot; November 2 to 6, 2026 &middot; Selected participant</p>
+          </div></li>
+          <li class="pub-item reveal"><div>
+            <p class="pub-title">European Meeting of Statisticians 2026</p>
+            <p class="pub-venue">Lugano, Switzerland &middot; August 24 to 28, 2026 &middot; Contributed talk</p>
+          </div></li>
+          <li class="pub-item reveal"><div>
+            <p class="pub-title">ICTS-Networks Workshop: &ldquo;Challenges in Networks&rdquo;</p>
+            <p class="pub-venue">ICTS-TIFR, Bengaluru &middot; April 2026 &middot; Research group member and speaker</p>
+          </div></li>
+          <li class="pub-item reveal"><div>
+            <p class="pub-title">Calcutta Triennial Symposium 2024</p>
+            <p class="pub-venue">Kolkata &middot; December 2024 &middot; Participant</p>
+          </div></li>
         </ol>
       </div>
     </section>
@@ -162,15 +231,16 @@
     <div class="container footer-inner">
       <p class="footer-mantra">vande guro&#7717; &#347;r&#299;-cara&#7751;&#257;ravindam</p>
       <div class="footer-links">
-        <a href="https://arxiv.org/search/?searchtype=author&amp;query=Ghoshal%2C+Spandan" target="_blank" rel="noopener">arXiv</a>
-        <a href="https://scholar.google.co.in/citations?user=7qqUX0IAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
-        <a href="https://www.youtube.com/@Spandan_Ghoshal" target="_blank" rel="noopener">YouTube</a>
-        <a href="mailto:ghoshalspandan@gmail.com">Email</a>
+        <a href="https://scholar.google.co.in/citations?user=7qqUX0IAAAAJ&amp;hl=en" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4 1.5 9.5 12 15l10.5-5.5L12 4Z"/><path d="M5.5 11.7v4.6c0 1.6 2.9 3.2 6.5 3.2s6.5-1.6 6.5-3.2v-4.6"/><path d="M22.5 9.5v5.2"/></svg>Scholar</a>
+        <a href="https://arxiv.org/search/?searchtype=author&amp;query=Ghoshal%2C+Spandan" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h6"/></svg>arXiv</a>
+        <a href="https://www.youtube.com/@Spandan_Ghoshal" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="3.6"/><path d="M10.2 9.3v5.4l4.6-2.7z" fill="currentColor"/></svg>YouTube</a>
+        <a href="mailto:ghoshalspandan@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.6 6.2 8.4 6.8 8.4-6.8"/></svg>Email</a>
       </div>
       <p class="footer-meta">&copy; <span data-year>2026</span> Spandan Ghoshal</p>
     </div>
   </footer>
 
+  <script src="cpviz.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
