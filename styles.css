@@ -855,7 +855,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 540; line-height: 1.
 .mandala {
   position: absolute;
   aspect-ratio: 1;
-  background: url("images/mandala.svg") center / contain no-repeat;
+  background: url("images/mandala_art.png") center / contain no-repeat;
   will-change: transform;
 }
 .mandala--a, .mandala--b {
